@@ -63,6 +63,11 @@
       border-left: 4px solid #186a6d;
       border-radius: 8px;
       transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
     }
 
     .my-card h2{
@@ -116,4 +121,8 @@
     }
     .name{
       display: flex;
+    }
+
+    .carousel{
+      display: inline-block;
     }
