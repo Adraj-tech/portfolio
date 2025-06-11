@@ -103,30 +103,6 @@
 }
 
 
-
-    footer {
-      display: flex;
-      flex-direction: row;
-      gap: 67%;
-      justify-items: center;
-      text-align: center;
-      padding: 2rem; 
-      background-color: #1a1a1a;
-      font-size: 0.9rem;
-    }
-
-    footer p{
-      float: right;
-    } 
-
-    footer a{
-      text-decoration: none;
-    }
-
-    .footerContact{
-      display: flex;
-      gap: 15%;
-    }
     .contact-all{
       display: inline-flex;
       flex-direction: column;
@@ -216,3 +192,53 @@
     .carousel{
       display: inline-block;
     }
+
+
+    footer {
+            background-color: #141e30;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .social-icons {
+            
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s, color 0.3s;
+        }
+        footer a.facebook:hover {
+            color: #3b5998; 
+        }
+
+        footer a.twitter:hover {
+            color: #1da1f2; 
+        }
+
+        footer a.instagram:hover {
+            color: #e1306c; 
+        }
+         footer a.linkedin:hover {
+            color: #0077b5; 
+        }
+
+        footer a.github:hover {
+            color: #333; 
+        }
+
+        footer a:hover {
+            transform: scale(1.2);
+        }
+
+        footer .copyright {
+            
+            font-size: 14px;
+            color: #ccc;
+        }
