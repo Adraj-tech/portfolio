@@ -189,9 +189,13 @@
       display: flex;
     }
 
-    .carousel{
-      display: inline-block;
-    }
+    .carousel {
+  width: 100%;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
 
 
     footer {
