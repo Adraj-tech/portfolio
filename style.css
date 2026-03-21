@@ -198,6 +198,87 @@
 }
 
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00c3ff;
+}
+
+/* Glass effect project card */
+.project-card {
+  width: 24rem;
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 195, 255, 0.3);
+}
+
+/* Title */
+.project-card h3 {
+  color: #00c3ff;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+/* Skills */
+.skills span {
+  background: #2c2c3e;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #00c3ff;
+  color: black;
+}
+
+/* Button */
+.project-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #00c3ff, #0072ff);
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #0072ff, #00c3ff);
+}
+
+/* Carousel spacing fix */
+.carousel-item {
+  padding: 20px 0;
+}
+
+/* Indicators styling */
+.carousel-indicators button {
+  background-color: #00c3ff;
+}
+
+
     footer {
             background-color: #141e30;
             color: white;
