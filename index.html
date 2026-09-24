@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Adarsh Raj — Portfolio</title>
+  <meta name="description" content="Adarsh Raj — B.Tech AIML student at BIT Mesra. Projects, skills, and certifications in AI/ML and full-stack development.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> 
@@ -20,6 +20,8 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <!-- <a href="#hobbies">Hobbies</a> -->
       <a href="#contact">Contact</a>
     </nav>
   </header> 
@@ -47,9 +49,9 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
 
       <!-- Indicators -->
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
       <div class="carousel-inner">
@@ -73,7 +75,7 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
                 <span>API</span>
               </div>
 
-              <a href="https://adraj-tech.github.io/weather_Report/" target="_blank" class="project-btn">
+              <a href="https://adraj-tech.github.io/weather_Report/" target="_blank" rel="noopener" class="project-btn">
                 Live Demo 🔗
               </a>
 
@@ -82,11 +84,11 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
         </div>
 
         <!-- Project 2 -->
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <div class="d-flex justify-content-center">
             <div class="project-card">
 
-              <h3>🌦 Blogging Website</h3>
+              <h3>📝 Blogging Website</h3>
 
               <p>
               Developed a full-stack blogging platform called “Bharat Diaries” featuring user authentication, blog publishing, category-wise filtering, and responsive UI design.
@@ -100,7 +102,7 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
                 <span>EJS</span>
               </div>
 
-              <a href="https://blogwebsite-k1ns.onrender.com/" target="_blank" class="project-btn">
+              <a href="https://blogwebsite-k1ns.onrender.com/" target="_blank" rel="noopener" class="project-btn">
                 Live Demo 🔗
               </a>
 
@@ -111,19 +113,17 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
         <div class="carousel-item">
           <div class="d-flex justify-content-center">
             <div class="project-card">
-              <h3>🎓 Student Portal</h3>
+              <h3>🚆 Railway Ticket Confirmation Predictor <span class="wip-badge">In Progress</span></h3>
               <p>
-                A responsive student portal UI with login system and dashboard design.
+                A machine learning project that predicts the probability of a waitlisted/RAC railway ticket getting confirmed, based on historical booking patterns.
               </p>
 
               <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-                <span>Bootstrap</span>
+                <span>Python</span>
+                <span>Machine Learning</span>
               </div>
 
-              <a href="#" class="project-btn">View Project</a>
+              <a href="#" class="project-btn wip-btn" aria-disabled="true">Work in Progress 🚧</a>
             </div>
           </div>
         </div>
@@ -132,11 +132,13 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
 
       <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
 
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
 
     </div>
@@ -154,11 +156,38 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
         <span>JavaScript</span>
         <span>Python</span>
         <span>C</span>
+        <span>Machine Learning</span>
         <span>Git</span>
         <span>Bootstrap</span>
       </div>
     </div>
   </section>
+  <!-- ====================================================CERTIFICATIONS======================================================== -->
+  <section id="certifications">
+    <div class="my-card">
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <a href="webDev.pdf" download class="cert-item">
+          <span class="cert-name">🏆 Complete Full Stack Web Development — Udemy</span>
+          <span class="cert-download"><i class="fas fa-download"></i> Download</span>
+        </a>
+        <a href="ML.pdf" download class="cert-item">
+          <span class="cert-name">🏆 Machine Learning — Udemy</span>
+          <span class="cert-download"><i class="fas fa-download"></i> Download</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ====================================================HOBBIES======================================================== -->
+  <!-- <section id="hobbies">
+    <div class="my-card">
+      <h2>Hobbies</h2>
+      <div class="skills">
+        <span>🏏 Cricket</span>
+        <span>♟️ Chess</span>
+      </div>
+    </div>
+  </section> -->
   <!-- ====================================================TIMELINE======================================================== -->
   <section id="timeline">
     <div class="my-card">
@@ -179,7 +208,7 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
     <div class="contact-details">
       
       <div  class="contact-all p-3 mb-2 bg-info text-dark">
-        <a href="mailto:adarshraj22336@gmail.com?subject= &body=Hii, Adarsh" target="_blank">
+        <a href="mailto:adarshraj22336@gmail.com?subject= &body=Hii, Adarsh" target="_blank" aria-label="Email Adarsh">
            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
 </svg>
@@ -187,7 +216,7 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
             <span>adarshraj22336@gmail.com</span>
     </div>
     <div class="contact-all p-3 mb-2 bg-info text-dark">
-      <a href="tel:+919341270429" target="_blank" title="Call">
+      <a href="tel:+919341270429" target="_blank" title="Call" aria-label="Call Adarsh">
      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
   <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
 </svg>
@@ -198,7 +227,7 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
     </div>
 
     <div class="contact-all p-3 mb-2 bg-info text-dark">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16" aria-hidden="true">
   <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
   <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
     </svg>
@@ -206,80 +235,62 @@ My ultimate goal is to become a well-rounded AI engineer who can bridge the gap 
     </div>
     
     <div class="contact-all p-3 mb-2 bg-info text-dark">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16" aria-hidden="true">
   <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
   <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
 </svg>
     <span>10:00 - 18:00</span>
     </div>
     </div>
-    <!-- ======================================================FORM======================================================== -->
-      <!-- <div class="form-container">
-    <form>
-      <div id="name-section">
-      <label for="fname">First Name</label>
-     <label for="lname">Last Name</label>
-      </div>
-      <div id="name-text">
-      <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-      </div>
-      <div id="name-section">
-      <label for="email">Email</label>
-      <label for="phone">Phone Number</label>
-      </div>
-      <input type="email" id="email" name="email" placeholder="Your email.." required>
-
-      
-      <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
-      <div>
-      <label for="message">Message</label>
-      </div>
-      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-
-      <button type="submit">Submit</button>
-    </form> 
-  </div> -->
     </div>
     </div>
   </section>
   <!-- ====================================================FOOTER======================================================== -->
   <footer>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" class="facebook"> <i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/adarsh_raj7871/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/adarsh-raj-44297931b" target="_blank" class="linkdin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Adraj-tech" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="facebook" aria-label="Facebook"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adarsh_raj7871/" target="_blank" rel="noopener" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adarsh-raj-44297931b" target="_blank" rel="noopener" class="linkdin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Adraj-tech" target="_blank" rel="noopener" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
         <div class="copyright">
             © 2025 Adarsh. All rights reserved.
         </div>
     </footer>
+
+  <!-- ====================================================AI CHATBOT WIDGET======================================================== -->
+  <div id="ai-chat-toggle" title="Ask AI about Adarsh" role="button" aria-label="Open chat assistant" tabindex="0">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <div id="ai-chat-window" role="dialog" aria-label="Portfolio chat assistant">
+    <div id="ai-chat-header">
+      <div class="ai-chat-header-info">
+        <i class="fas fa-robot"></i>
+        <div>
+          <strong>Ask AI about Adarsh</strong>
+          <span class="ai-status">● online</span>
+        </div>
+      </div>
+      <i class="fas fa-times" id="ai-chat-close" role="button" aria-label="Close chat" tabindex="0"></i>
+    </div>
+
+    <div id="ai-chat-messages"></div>
+
+    <div id="ai-chat-suggestions">
+      <button class="ai-suggestion-chip">Projects?</button>
+      <button class="ai-suggestion-chip">Skills?</button>
+      <button class="ai-suggestion-chip">Contact info</button>
+    </div>
+
+    <div id="ai-chat-input-row">
+      <input type="text" id="ai-chat-input" placeholder="Ask me something..." aria-label="Type your question">
+      <button id="ai-chat-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>
-
-
-
-<!-- <nav>
-     <a href="https://instagram.com/yourprofile" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-       alt="Instagram" width="30" height="30">
-</a>
-
-     <a href="https://linkedin.com/in/yourprofile" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
-       alt="LinkedIn" width="30" height="30">
-</a>
-
-     <a href="https://facebook.com/yourprofile" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
-       alt="Facebook" width="30" height="30">
-</a>
-
-     <a href="mailto:adarshraj22336@gmail.com?subject= &body=Hii, Adarsh">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" 
-       alt="Gmail" width="30" height="30">
-</a>
- </nav> -->
